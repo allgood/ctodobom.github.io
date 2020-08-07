@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \ctodobom\APInterPHP\Cobranca\Boleto
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/ctodobom.html">ctodobom</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: ">
+            <span class="description"></span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCnpjCPFBeneficiario" title="getCnpjCPFBeneficiario :: ">
+            <span class="description"></span><pre>getCnpjCPFBeneficiario</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCodigoBarras" title="getCodigoBarras :: ">
+            <span class="description"></span><pre>getCodigoBarras</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getController" title="getController :: ">
+            <span class="description"></span><pre>getController</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDataEmissao" title="getDataEmissao :: ">
+            <span class="description"></span><pre>getDataEmissao</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDataLimite" title="getDataLimite :: ">
+            <span class="description"></span><pre>getDataLimite</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDataVencimento" title="getDataVencimento :: ">
+            <span class="description"></span><pre>getDataVencimento</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDesconto1" title="getDesconto1 :: ">
+            <span class="description"></span><pre>getDesconto1</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDesconto2" title="getDesconto2 :: ">
+            <span class="description"></span><pre>getDesconto2</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDesconto3" title="getDesconto3 :: ">
+            <span class="description"></span><pre>getDesconto3</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getLinhaDigitavel" title="getLinhaDigitavel :: ">
+            <span class="description"></span><pre>getLinhaDigitavel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMensagem" title="getMensagem :: ">
+            <span class="description"></span><pre>getMensagem</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMora" title="getMora :: ">
+            <span class="description"></span><pre>getMora</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMulta" title="getMulta :: ">
+            <span class="description"></span><pre>getMulta</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getNossoNumero" title="getNossoNumero :: ">
+            <span class="description"></span><pre>getNossoNumero</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getNumDiasAgenda" title="getNumDiasAgenda :: ">
+            <span class="description"></span><pre>getNumDiasAgenda</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getPagador" title="getPagador :: ">
+            <span class="description"></span><pre>getPagador</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSeuNumero" title="getSeuNumero :: ">
+            <span class="description"></span><pre>getSeuNumero</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getValorAbatimento" title="getValorAbatimento :: ">
+            <span class="description"></span><pre>getValorAbatimento</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getValorNominal" title="getValorNominal :: ">
+            <span class="description"></span><pre>getValorNominal</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_jsonSerialize" title="jsonSerialize :: ">
+            <span class="description"></span><pre>jsonSerialize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setCnpjCPFBeneficiario" title="setCnpjCPFBeneficiario :: ">
+            <span class="description"></span><pre>setCnpjCPFBeneficiario</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setCodigoBarras" title="setCodigoBarras :: ">
+            <span class="description"></span><pre>setCodigoBarras</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setController" title="setController :: ">
+            <span class="description"></span><pre>setController</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDataEmissao" title="setDataEmissao :: ">
+            <span class="description"></span><pre>setDataEmissao</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDataLimite" title="setDataLimite :: ">
+            <span class="description"></span><pre>setDataLimite</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDataVencimento" title="setDataVencimento :: ">
+            <span class="description"></span><pre>setDataVencimento</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDesconto1" title="setDesconto1 :: ">
+            <span class="description"></span><pre>setDesconto1</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDesconto2" title="setDesconto2 :: ">
+            <span class="description"></span><pre>setDesconto2</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDesconto3" title="setDesconto3 :: ">
+            <span class="description"></span><pre>setDesconto3</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setLinhaDigitavel" title="setLinhaDigitavel :: ">
+            <span class="description"></span><pre>setLinhaDigitavel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setMensagem" title="setMensagem :: ">
+            <span class="description"></span><pre>setMensagem</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setMora" title="setMora :: ">
+            <span class="description"></span><pre>setMora</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setMulta" title="setMulta :: ">
+            <span class="description"></span><pre>setMulta</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setNossoNumero" title="setNossoNumero :: ">
+            <span class="description"></span><pre>setNossoNumero</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setNumDiasAgenda" title="setNumDiasAgenda :: ">
+            <span class="description"></span><pre>setNumDiasAgenda</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setPagador" title="setPagador :: ">
+            <span class="description"></span><pre>setPagador</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSeuNumero" title="setSeuNumero :: ">
+            <span class="description"></span><pre>setSeuNumero</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setValorAbatimento" title="setValorAbatimento :: ">
+            <span class="description"></span><pre>setValorAbatimento</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setValorNominal" title="setValorNominal :: ">
+            <span class="description"></span><pre>setValorNominal</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_SESSENTA_DIAS" title="SESSENTA_DIAS :: ">
+                        <span class="description"></span><pre>SESSENTA_DIAS</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TRINTA_DIAS" title="TRINTA_DIAS :: ">
+                        <span class="description"></span><pre>TRINTA_DIAS</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Boleto</h1>
+                <small style="display: block; text-align: right">
+                                                                Implements \JsonSerializable
+                                    </small>
+                <p class="short_description"></p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>__construct</h2>
+                            <pre>__construct() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCnpjCPFBeneficiario"></a>
+                        <div class="element clickable method public  method_getCnpjCPFBeneficiario" data-toggle="collapse" data-target=".method_getCnpjCPFBeneficiario .collapse">
+                            <h2>getCnpjCPFBeneficiario</h2>
+                            <pre>getCnpjCPFBeneficiario() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCodigoBarras"></a>
+                        <div class="element clickable method public  method_getCodigoBarras" data-toggle="collapse" data-target=".method_getCodigoBarras .collapse">
+                            <h2>getCodigoBarras</h2>
+                            <pre>getCodigoBarras() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getController"></a>
+                        <div class="element clickable method public  method_getController" data-toggle="collapse" data-target=".method_getController .collapse">
+                            <h2>getController</h2>
+                            <pre>getController() : \ctodobom\APInterPHP\BancoInter</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.BancoInter.html">\ctodobom\APInterPHP\BancoInter</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDataEmissao"></a>
+                        <div class="element clickable method public  method_getDataEmissao" data-toggle="collapse" data-target=".method_getDataEmissao .collapse">
+                            <h2>getDataEmissao</h2>
+                            <pre>getDataEmissao() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDataLimite"></a>
+                        <div class="element clickable method public  method_getDataLimite" data-toggle="collapse" data-target=".method_getDataLimite .collapse">
+                            <h2>getDataLimite</h2>
+                            <pre>getDataLimite() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDataVencimento"></a>
+                        <div class="element clickable method public  method_getDataVencimento" data-toggle="collapse" data-target=".method_getDataVencimento .collapse">
+                            <h2>getDataVencimento</h2>
+                            <pre>getDataVencimento() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDesconto1"></a>
+                        <div class="element clickable method public  method_getDesconto1" data-toggle="collapse" data-target=".method_getDesconto1 .collapse">
+                            <h2>getDesconto1</h2>
+                            <pre>getDesconto1() : \ctodobom\APInterPHP\Cobranca\Desconto</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Desconto.html">\ctodobom\APInterPHP\Cobranca\Desconto</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDesconto2"></a>
+                        <div class="element clickable method public  method_getDesconto2" data-toggle="collapse" data-target=".method_getDesconto2 .collapse">
+                            <h2>getDesconto2</h2>
+                            <pre>getDesconto2() : \ctodobom\APInterPHP\Cobranca\Desconto</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Desconto.html">\ctodobom\APInterPHP\Cobranca\Desconto</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDesconto3"></a>
+                        <div class="element clickable method public  method_getDesconto3" data-toggle="collapse" data-target=".method_getDesconto3 .collapse">
+                            <h2>getDesconto3</h2>
+                            <pre>getDesconto3() : \ctodobom\APInterPHP\Cobranca\Desconto</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Desconto.html">\ctodobom\APInterPHP\Cobranca\Desconto</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getLinhaDigitavel"></a>
+                        <div class="element clickable method public  method_getLinhaDigitavel" data-toggle="collapse" data-target=".method_getLinhaDigitavel .collapse">
+                            <h2>getLinhaDigitavel</h2>
+                            <pre>getLinhaDigitavel() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getMensagem"></a>
+                        <div class="element clickable method public  method_getMensagem" data-toggle="collapse" data-target=".method_getMensagem .collapse">
+                            <h2>getMensagem</h2>
+                            <pre>getMensagem() : \ctodobom\APInterPHP\Cobranca\Mensagem</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Mensagem.html">\ctodobom\APInterPHP\Cobranca\Mensagem</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getMora"></a>
+                        <div class="element clickable method public  method_getMora" data-toggle="collapse" data-target=".method_getMora .collapse">
+                            <h2>getMora</h2>
+                            <pre>getMora() : \ctodobom\APInterPHP\Cobranca\Mora</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Mora.html">\ctodobom\APInterPHP\Cobranca\Mora</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getMulta"></a>
+                        <div class="element clickable method public  method_getMulta" data-toggle="collapse" data-target=".method_getMulta .collapse">
+                            <h2>getMulta</h2>
+                            <pre>getMulta() : \ctodobom\APInterPHP\Cobranca\Multa</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Multa.html">\ctodobom\APInterPHP\Cobranca\Multa</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getNossoNumero"></a>
+                        <div class="element clickable method public  method_getNossoNumero" data-toggle="collapse" data-target=".method_getNossoNumero .collapse">
+                            <h2>getNossoNumero</h2>
+                            <pre>getNossoNumero() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getNumDiasAgenda"></a>
+                        <div class="element clickable method public  method_getNumDiasAgenda" data-toggle="collapse" data-target=".method_getNumDiasAgenda .collapse">
+                            <h2>getNumDiasAgenda</h2>
+                            <pre>getNumDiasAgenda() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getPagador"></a>
+                        <div class="element clickable method public  method_getPagador" data-toggle="collapse" data-target=".method_getPagador .collapse">
+                            <h2>getPagador</h2>
+                            <pre>getPagador() : \ctodobom\APInterPHP\Cobranca\Pagador</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Pagador.html">\ctodobom\APInterPHP\Cobranca\Pagador</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSeuNumero"></a>
+                        <div class="element clickable method public  method_getSeuNumero" data-toggle="collapse" data-target=".method_getSeuNumero .collapse">
+                            <h2>getSeuNumero</h2>
+                            <pre>getSeuNumero() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getValorAbatimento"></a>
+                        <div class="element clickable method public  method_getValorAbatimento" data-toggle="collapse" data-target=".method_getValorAbatimento .collapse">
+                            <h2>getValorAbatimento</h2>
+                            <pre>getValorAbatimento() : \ctodobom\APInterPHP\Cobranca\number</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>\ctodobom\APInterPHP\Cobranca\number</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getValorNominal"></a>
+                        <div class="element clickable method public  method_getValorNominal" data-toggle="collapse" data-target=".method_getValorNominal .collapse">
+                            <h2>getValorNominal</h2>
+                            <pre>getValorNominal() : \ctodobom\APInterPHP\Cobranca\number</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>\ctodobom\APInterPHP\Cobranca\number</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_jsonSerialize"></a>
+                        <div class="element clickable method public  method_jsonSerialize" data-toggle="collapse" data-target=".method_jsonSerialize .collapse">
+                            <h2>jsonSerialize</h2>
+                            <pre>jsonSerialize() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setCnpjCPFBeneficiario"></a>
+                        <div class="element clickable method public  method_setCnpjCPFBeneficiario" data-toggle="collapse" data-target=".method_setCnpjCPFBeneficiario .collapse">
+                            <h2>setCnpjCPFBeneficiario</h2>
+                            <pre>setCnpjCPFBeneficiario(mixed $cnpjCPFBeneficiario) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cnpjCPFBeneficiario</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setCodigoBarras"></a>
+                        <div class="element clickable method public  method_setCodigoBarras" data-toggle="collapse" data-target=".method_setCodigoBarras .collapse">
+                            <h2>setCodigoBarras</h2>
+                            <pre>setCodigoBarras(mixed $codigoBarras) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$codigoBarras</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setController"></a>
+                        <div class="element clickable method public  method_setController" data-toggle="collapse" data-target=".method_setController .collapse">
+                            <h2>setController</h2>
+                            <pre>setController(\ctodobom\APInterPHP\BancoInter $controller) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$controller</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.BancoInter.html">\ctodobom\APInterPHP\BancoInter</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setDataEmissao"></a>
+                        <div class="element clickable method public  method_setDataEmissao" data-toggle="collapse" data-target=".method_setDataEmissao .collapse">
+                            <h2>setDataEmissao</h2>
+                            <pre>setDataEmissao(mixed $dataEmissao) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dataEmissao</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setDataLimite"></a>
+                        <div class="element clickable method public  method_setDataLimite" data-toggle="collapse" data-target=".method_setDataLimite .collapse">
+                            <h2>setDataLimite</h2>
+                            <pre>setDataLimite(string $dataLimite) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dataLimite</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setDataVencimento"></a>
+                        <div class="element clickable method public  method_setDataVencimento" data-toggle="collapse" data-target=".method_setDataVencimento .collapse">
+                            <h2>setDataVencimento</h2>
+                            <pre>setDataVencimento(mixed $dataVencimento) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dataVencimento</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setDesconto1"></a>
+                        <div class="element clickable method public  method_setDesconto1" data-toggle="collapse" data-target=".method_setDesconto1 .collapse">
+                            <h2>setDesconto1</h2>
+                            <pre>setDesconto1(\ctodobom\APInterPHP\Cobranca\Desconto $desconto1) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$desconto1</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Desconto.html">\ctodobom\APInterPHP\Cobranca\Desconto</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setDesconto2"></a>
+                        <div class="element clickable method public  method_setDesconto2" data-toggle="collapse" data-target=".method_setDesconto2 .collapse">
+                            <h2>setDesconto2</h2>
+                            <pre>setDesconto2(\ctodobom\APInterPHP\Cobranca\Desconto $desconto2) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$desconto2</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Desconto.html">\ctodobom\APInterPHP\Cobranca\Desconto</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setDesconto3"></a>
+                        <div class="element clickable method public  method_setDesconto3" data-toggle="collapse" data-target=".method_setDesconto3 .collapse">
+                            <h2>setDesconto3</h2>
+                            <pre>setDesconto3(\ctodobom\APInterPHP\Cobranca\Desconto $desconto3) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$desconto3</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Desconto.html">\ctodobom\APInterPHP\Cobranca\Desconto</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setLinhaDigitavel"></a>
+                        <div class="element clickable method public  method_setLinhaDigitavel" data-toggle="collapse" data-target=".method_setLinhaDigitavel .collapse">
+                            <h2>setLinhaDigitavel</h2>
+                            <pre>setLinhaDigitavel(mixed $linhaDigitavel) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$linhaDigitavel</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setMensagem"></a>
+                        <div class="element clickable method public  method_setMensagem" data-toggle="collapse" data-target=".method_setMensagem .collapse">
+                            <h2>setMensagem</h2>
+                            <pre>setMensagem(\ctodobom\APInterPHP\Cobranca\Mensagem $mensagem) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mensagem</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Mensagem.html">\ctodobom\APInterPHP\Cobranca\Mensagem</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setMora"></a>
+                        <div class="element clickable method public  method_setMora" data-toggle="collapse" data-target=".method_setMora .collapse">
+                            <h2>setMora</h2>
+                            <pre>setMora(\ctodobom\APInterPHP\Cobranca\Mora $mora) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mora</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Mora.html">\ctodobom\APInterPHP\Cobranca\Mora</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setMulta"></a>
+                        <div class="element clickable method public  method_setMulta" data-toggle="collapse" data-target=".method_setMulta .collapse">
+                            <h2>setMulta</h2>
+                            <pre>setMulta(\ctodobom\APInterPHP\Cobranca\Multa $multa) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$multa</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Multa.html">\ctodobom\APInterPHP\Cobranca\Multa</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setNossoNumero"></a>
+                        <div class="element clickable method public  method_setNossoNumero" data-toggle="collapse" data-target=".method_setNossoNumero .collapse">
+                            <h2>setNossoNumero</h2>
+                            <pre>setNossoNumero(mixed $nossoNumero) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$nossoNumero</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setNumDiasAgenda"></a>
+                        <div class="element clickable method public  method_setNumDiasAgenda" data-toggle="collapse" data-target=".method_setNumDiasAgenda .collapse">
+                            <h2>setNumDiasAgenda</h2>
+                            <pre>setNumDiasAgenda(string $numDiasAgenda) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$numDiasAgenda</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setPagador"></a>
+                        <div class="element clickable method public  method_setPagador" data-toggle="collapse" data-target=".method_setPagador .collapse">
+                            <h2>setPagador</h2>
+                            <pre>setPagador(\ctodobom\APInterPHP\Cobranca\Pagador $pagador) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pagador</h4>
+                                                <code><a href="../classes/ctodobom.APInterPHP.Cobranca.Pagador.html">\ctodobom\APInterPHP\Cobranca\Pagador</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setSeuNumero"></a>
+                        <div class="element clickable method public  method_setSeuNumero" data-toggle="collapse" data-target=".method_setSeuNumero .collapse">
+                            <h2>setSeuNumero</h2>
+                            <pre>setSeuNumero(mixed $seuNumero) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$seuNumero</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setValorAbatimento"></a>
+                        <div class="element clickable method public  method_setValorAbatimento" data-toggle="collapse" data-target=".method_setValorAbatimento .collapse">
+                            <h2>setValorAbatimento</h2>
+                            <pre>setValorAbatimento(\ctodobom\APInterPHP\Cobranca\number $valorAbatimento) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$valorAbatimento</h4>
+                                                <code>\ctodobom\APInterPHP\Cobranca\number</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setValorNominal"></a>
+                        <div class="element clickable method public  method_setValorNominal" data-toggle="collapse" data-target=".method_setValorNominal .collapse">
+                            <h2>setValorNominal</h2>
+                            <pre>setValorNominal(\ctodobom\APInterPHP\Cobranca\number $valorNominal) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$valorNominal</h4>
+                                                <code>\ctodobom\APInterPHP\Cobranca\number</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_SESSENTA_DIAS"> </a>
+                            <div class="element clickable constant  constant_SESSENTA_DIAS" data-toggle="collapse" data-target=".constant_SESSENTA_DIAS .collapse">
+                                <h2>SESSENTA_DIAS</h2>
+                                <pre>SESSENTA_DIAS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TRINTA_DIAS"> </a>
+                            <div class="element clickable constant  constant_TRINTA_DIAS" data-toggle="collapse" data-target=".constant_TRINTA_DIAS .collapse">
+                                <h2>TRINTA_DIAS</h2>
+                                <pre>TRINTA_DIAS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_dataEmissao"> </a>
+                            <div class="element clickable property  private property_dataEmissao" data-toggle="collapse" data-target=".property_dataEmissao .collapse">
+                                <h2>dataEmissao</h2>
+                                <pre>dataEmissao : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_seuNumero"> </a>
+                            <div class="element clickable property  private property_seuNumero" data-toggle="collapse" data-target=".property_seuNumero .collapse">
+                                <h2>seuNumero</h2>
+                                <pre>seuNumero : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dataLimite"> </a>
+                            <div class="element clickable property  private property_dataLimite" data-toggle="collapse" data-target=".property_dataLimite .collapse">
+                                <h2>dataLimite</h2>
+                                <pre>dataLimite : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dataVencimento"> </a>
+                            <div class="element clickable property  private property_dataVencimento" data-toggle="collapse" data-target=".property_dataVencimento .collapse">
+                                <h2>dataVencimento</h2>
+                                <pre>dataVencimento : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_valorNominal"> </a>
+                            <div class="element clickable property  private property_valorNominal" data-toggle="collapse" data-target=".property_valorNominal .collapse">
+                                <h2>valorNominal</h2>
+                                <pre>valorNominal : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_valorAbatimento"> </a>
+                            <div class="element clickable property  private property_valorAbatimento" data-toggle="collapse" data-target=".property_valorAbatimento .collapse">
+                                <h2>valorAbatimento</h2>
+                                <pre>valorAbatimento : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_cnpjCPFBeneficiario"> </a>
+                            <div class="element clickable property  private property_cnpjCPFBeneficiario" data-toggle="collapse" data-target=".property_cnpjCPFBeneficiario .collapse">
+                                <h2>cnpjCPFBeneficiario</h2>
+                                <pre>cnpjCPFBeneficiario : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_numDiasAgenda"> </a>
+                            <div class="element clickable property  private property_numDiasAgenda" data-toggle="collapse" data-target=".property_numDiasAgenda .collapse">
+                                <h2>numDiasAgenda</h2>
+                                <pre>numDiasAgenda : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_pagador"> </a>
+                            <div class="element clickable property  private property_pagador" data-toggle="collapse" data-target=".property_pagador .collapse">
+                                <h2>pagador</h2>
+                                <pre>pagador : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_mensagem"> </a>
+                            <div class="element clickable property  private property_mensagem" data-toggle="collapse" data-target=".property_mensagem .collapse">
+                                <h2>mensagem</h2>
+                                <pre>mensagem : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_desconto1"> </a>
+                            <div class="element clickable property  private property_desconto1" data-toggle="collapse" data-target=".property_desconto1 .collapse">
+                                <h2>desconto1</h2>
+                                <pre>desconto1 : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_desconto2"> </a>
+                            <div class="element clickable property  private property_desconto2" data-toggle="collapse" data-target=".property_desconto2 .collapse">
+                                <h2>desconto2</h2>
+                                <pre>desconto2 : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_desconto3"> </a>
+                            <div class="element clickable property  private property_desconto3" data-toggle="collapse" data-target=".property_desconto3 .collapse">
+                                <h2>desconto3</h2>
+                                <pre>desconto3 : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_multa"> </a>
+                            <div class="element clickable property  private property_multa" data-toggle="collapse" data-target=".property_multa .collapse">
+                                <h2>multa</h2>
+                                <pre>multa : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_mora"> </a>
+                            <div class="element clickable property  private property_mora" data-toggle="collapse" data-target=".property_mora .collapse">
+                                <h2>mora</h2>
+                                <pre>mora : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_nossoNumero"> </a>
+                            <div class="element clickable property  private property_nossoNumero" data-toggle="collapse" data-target=".property_nossoNumero .collapse">
+                                <h2>nossoNumero</h2>
+                                <pre>nossoNumero : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_codigoBarras"> </a>
+                            <div class="element clickable property  private property_codigoBarras" data-toggle="collapse" data-target=".property_codigoBarras .collapse">
+                                <h2>codigoBarras</h2>
+                                <pre>codigoBarras : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_linhaDigitavel"> </a>
+                            <div class="element clickable property  private property_linhaDigitavel" data-toggle="collapse" data-target=".property_linhaDigitavel .collapse">
+                                <h2>linhaDigitavel</h2>
+                                <pre>linhaDigitavel : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_controller"> </a>
+                            <div class="element clickable property  private property_controller" data-toggle="collapse" data-target=".property_controller .collapse">
+                                <h2>controller</h2>
+                                <pre>controller : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\ctodobom\APInterPHP\Cobranca\Boleto"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/ctodobom.APInterPHP.Cobranca.html">Cobranca</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/ctodobom.APInterPHP.Cobranca.Boleto.html">Boleto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Fri, 07 Aug 2020 14:22:46 +0000.<br/>
+    </footer>
+    </body>
+</html>
